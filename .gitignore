@@ -1,0 +1,6 @@
+.idea
+AdventOfCode/bin
+AdventOfCode/obj
+*.sln
+*.fsproj
+
