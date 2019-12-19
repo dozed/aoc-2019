@@ -85,4 +85,4 @@ let exercise3 =
     printfn "%A" zs
     printfn "%A" zsSorted
     
-    0
+    

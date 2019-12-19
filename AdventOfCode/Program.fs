@@ -5,6 +5,7 @@
 open Exercise1
 open Exercise2
 open Exercise3
+open Exercise4
 open System
 
 
@@ -13,8 +14,8 @@ let main argv =
 
     // exercise1
     // exercise2
-    exercise3
+    // exercise3
+    // exercise4
 
-    
 
     0 // return an integer exit code
