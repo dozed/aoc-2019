@@ -2,5 +2,5 @@
 AdventOfCode/bin
 AdventOfCode/obj
 *.sln
+*.sln.DotSettings.user
 *.fsproj
-

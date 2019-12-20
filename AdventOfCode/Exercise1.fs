@@ -20,7 +20,7 @@ let rec fuelRequired mass =
     else fuel + (fuelRequired fuel)
 
 let exercise1 =
-    let masses = parseFile "/home/stefan/Code/data/aoc2019/input1.txt"
+    let masses = parseFile "input/input1.txt"
     let fuels = List.map fuelRequired masses
     let sum = List.sum(fuels)
     printfn "%A" sum
