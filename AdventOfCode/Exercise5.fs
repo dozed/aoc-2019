@@ -101,5 +101,9 @@ let rec run (program: int []) eip =
         run program eip'
 
 let exercise5 = 
+    printfn "%A" (parseParameterMode  1002)    
+    printfn "%A" (parseParameterMode 11002)    
+    printfn "%A" (parseParameterMode 11102)
+    
     let program1 = Array.copy initProgram
     run program1 0
