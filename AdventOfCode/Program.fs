@@ -1,11 +1,10 @@
 ﻿module Foo.Bar
 
-// Learn more about F# at http://fsharp.org
-
 open Exercise1
-open Exercise2
+//open Exercise2
 open Exercise3
 open Exercise4
+open Exercise5
 open System
 
 
@@ -17,5 +16,11 @@ let main argv =
     // exercise3
     // exercise4
 
-
-    0 // return an integer exit code
+    printfn "%A" (parseParameterMode  1002)    
+    printfn "%A" (parseParameterMode 11002)    
+    printfn "%A" (parseParameterMode 11102)
+    
+    let program1 = Array.copy initProgram
+    run program1 0
+    
+    0
