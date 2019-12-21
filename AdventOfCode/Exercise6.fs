@@ -7,6 +7,8 @@ open QuickGraph.Algorithms.Observers
 open QuickGraph.Algorithms.ShortestPath
 open System
 
+// https://github.com/FubarDevelopment/QuickGraph/wiki/Shortest-Path
+
 let exampleGraph: AdjacencyGraph<string, IEdge<string>> =
     let g = new AdjacencyGraph<string, IEdge<string>>()
     let nodes = ["COM"; "B"; "C"; "D"; "E"; "F"; "G"; "H"; "I"; "J"; "K"; "L"]
