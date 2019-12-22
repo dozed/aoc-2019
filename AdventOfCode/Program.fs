@@ -1,6 +1,8 @@
 ﻿module Foo.Bar
 
 open System
+open System.Collections.Generic
+
 open Exercise1
 open Exercise2
 open Exercise3
@@ -9,7 +11,7 @@ open Exercise5
 open Exercise6
 open Exercise7
 open Exercise8
-
+open Exercise9
 
 [<EntryPoint>]
 let main argv =
@@ -21,6 +23,9 @@ let main argv =
     // exercise5
     // exercise6
     // exercise7    
-    exercise8    
-        
+    // exercise8
+    exercise9
+    
+    
+                
     0
