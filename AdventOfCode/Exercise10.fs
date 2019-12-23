@@ -132,7 +132,7 @@ let isBlockedBy' (a:Vector<double>) (b:Vector<double>) (xs:Vector<double> list) 
 let isEqual (a:Vector<double>) (b:Vector<double>) =
     (a.[0] = b.[0]) && (a.[1] = b.[1])
     
-let getViewable (a:Vector<double>) (points:Vector<double> list) = 
+let getViewablePoints (a:Vector<double>) (points:Vector<double> list) = 
     let mutable viewable = []
 
     let others = List.filter (fun v -> not(isEqual v a)) points
@@ -166,7 +166,7 @@ let rec computeList i (x:Vector<double>) (xs:Vector<double> list) =
     match xs with
     | [] -> ()
     | _ ->
-        let viewable = getViewable x xs
+        let viewable = getViewablePoints x xs
         let nonViewable = List.filter (fun v -> not(contains' v viewable)) xs 
 
         printfn "---"
@@ -223,9 +223,9 @@ let exercise10 =
 
 
 
-    let vectors = parseMap ex5
+    let points = parseMap ex5
 
-    let xs = List.map (fun v -> (v, List.length (getViewable v vectors))) vectors |> List.sortByDescending snd
+    let xs = List.map (fun x -> (x, List.length (getViewablePoints x points))) points |> List.sortByDescending snd
     for x in xs do
         printfn "%A" x
     printfn "---"
@@ -233,5 +233,5 @@ let exercise10 =
     let x = vector [19.0;11.0]
     printfn "x: %A" x
 
-    let others = List.filter (fun v -> not(isEqual v x)) vectors
+    let others = List.filter (fun v -> not(isEqual v x)) points
     computeList 0 x others
