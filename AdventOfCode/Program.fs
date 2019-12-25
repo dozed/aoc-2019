@@ -1,8 +1,10 @@
 ﻿module Foo.Bar
 
 open System
+open System.Threading
 open System.Collections.Generic
 open FsAlg.Generic
+open Dict
 
 open Exercise1
 open Exercise2
@@ -15,6 +17,8 @@ open Exercise8
 open Exercise9
 open Exercise10
 open Exercise11
+open Exercise12
+open Exercise13
 
 
 [<EntryPoint>]
@@ -31,7 +35,9 @@ let main argv =
     // exercise9
     // exercise10
     // exercise11
+    // exercise12
+    exercise13
 
-    
+
     
     0
