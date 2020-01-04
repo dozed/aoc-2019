@@ -6,3 +6,4 @@ AdventOfCodeCS/obj
 *.sln
 *.sln.DotSettings.user
 *.fsproj
+*.csproj
