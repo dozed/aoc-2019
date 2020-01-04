@@ -1,6 +1,8 @@
 .idea
 AdventOfCode/bin
 AdventOfCode/obj
+AdventOfCodeCS/bin
+AdventOfCodeCS/obj
 *.sln
 *.sln.DotSettings.user
 *.fsproj

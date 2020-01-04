@@ -1,4 +1,4 @@
-module ConsoleApp1.Module1
+module Module1
 
 let lift2 f a b =
     match a, b with
