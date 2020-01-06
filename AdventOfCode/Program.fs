@@ -24,6 +24,8 @@ open Exercise12
 open Exercise13
 open Exercise14
 open Exercise15
+open Exercise17
+
 
 [<EntryPoint>]
 let main argv =
@@ -43,9 +45,8 @@ let main argv =
     // exercise13
     // exercise14
     // exercise15
+    
+    exercise17
 
-    
-    
-    
-    
+ 
     0
