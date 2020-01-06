@@ -99,7 +99,7 @@ let applyOp (program: int64 []) eip: StatusCode =
             Continue (eip+4)
         | 3 ->
             // input
-            let idx1 = readParameterAddress program.[eip+1] a relativeBase
+            let idx1 = readParameterAddress program.[eip+1] c relativeBase
             // let idx1 = program.[eip+1]
             // printfn "Enter int: "
             // let i = int (Console.ReadLine())
